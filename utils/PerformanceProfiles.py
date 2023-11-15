@@ -279,7 +279,7 @@ def perfprof2(data, linespecs=None, linewidth=1.6, thmax=None,
         if x[-1] < thmax - tol:
             x = np.append(x, thmax)
             y = np.append(y, y[-1])
-        y += 0.07
+        y += 0.1
         print('Method: %s - %.2f' %(legendnames[alt], y[0]) )    
 
         # plot current line
